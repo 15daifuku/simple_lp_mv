@@ -1,0 +1,204 @@
+html, body {
+  width: 100%;
+  font-family:'メイリオ', 'Meiryo', sans-serif;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+p {
+  font-size: 20px;
+}
+
+nav.banner {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.55)!important;
+}
+
+nav.banner a {
+  color: white;
+}
+
+li.dropdown {
+  display: none;
+}
+
+div.wrap_img img {
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+
+div.wrap_img .text_box {
+  display: table-cell !important;
+  vertical-align: middle !important;
+}
+
+div.wrap_img .text {
+  position: absolute;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); /*上下左右中央寄せ*/
+  z-index: 1;
+}
+
+.row {
+  margin-right: .01%;
+}
+
+div.abouts {
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  padding: 10% 10%;
+}
+
+div.about {
+  margin-bottom: 2%;
+}
+
+div.about_desc {
+  padding-left: 0;
+}
+
+div.abouts img {
+  width: 60%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 2%;
+}
+
+div.skills {
+  background-image: url("../src/skills_image.jpg");
+  background-position: center center;
+  color: black;
+  padding: 10% 30%;
+  margin-bottom: 5%;
+}
+
+div.skills .skill {
+  font-size: 32px;
+  color: white;
+  margin-bottom: 2%;
+}
+
+div.skills p {
+  color: white;
+}
+
+.my_icon {
+  font-size: 5em;
+}
+
+.icon_orange {
+  background-color: transparent;
+  /* background-color: orange; */
+  color: orange;
+}
+.icon_skyblue {
+  background-color: transparent;
+  color: skyblue;
+}
+.icon_purple {
+  background-color: transparent;
+  color: purple;
+}
+.icon_lime {
+  background-color: transparent;
+  color: #00CC66;
+}
+
+/* サービスメニューの設定 */
+div.services {
+  padding: 5% 0;
+}
+
+div.service {
+  margin-bottom: 3%;
+}
+
+div.service_desc {
+    /* padding-left: 10%; */
+}
+
+div.services img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 5%;
+  /* padding-left: 5%; */
+  /* padding: 10px; */
+}
+
+/* 成果物一覧 */
+div.works {
+  /* background-color: silver; */
+  background-image: url("../src/works_image.jpg");
+  background-position: center center;
+  padding: 5% 0;
+}
+
+div.works .sample {
+  margin-bottom: 20px;
+}
+
+div.works img {
+  width: 60%;
+}
+
+div.contact {
+  background-color: white;
+  text-align: center;
+  margin-top: 10%;
+}
+
+/* お問い合わせ */
+div.form {
+  padding-bottom: 15px;
+  padding-left: 5%;
+}
+
+/* フッター */
+footer {
+  background-color: rgba(0, 0, 0, 0.55);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 620px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  h3,h4 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  div.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  div.services img {
+    width: 60%;
+    height: auto;
+  }
+
+}
